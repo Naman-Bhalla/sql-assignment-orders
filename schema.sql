@@ -1014,3 +1014,4 @@ insert into Orders (CustomerID, OrderDate, ProductID, Quantity) values (1000, '2
 -- Write query to create the index that you will create to optimize a query like
 -- SELECT * FROM Orders WHERE CustomerID = {abc} AND OrderDate > '{abc}';
 
+CREATE INDEX idx_customer_order_date ON Orders(CustomerID, OrderDate);
