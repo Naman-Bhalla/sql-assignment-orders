@@ -1012,5 +1012,5 @@ insert into Orders (CustomerID, OrderDate, ProductID, Quantity) values (999, '20
 insert into Orders (CustomerID, OrderDate, ProductID, Quantity) values (1000, '2023-02-17', 1000, 1000);
 
 -- Write query to create the index that you will create to optimize a query like
--- SELECT * FROM Orders WHERE CustomerID = {abc} AND OrderDate > '{abc}';
-
+SELECT * FROM Orders WHERE CustomerID = {abc} AND OrderDate > '{abc}';
+Create index idx_Orders_CustomerID on Orders(CustomerID);
